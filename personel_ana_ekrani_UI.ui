@@ -1,0 +1,1547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowPerAnaEkran</class>
+ <widget class="QMainWindow" name="MainWindowPerAnaEkran">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1265</width>
+    <height>865</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Personel Ana Ekranı</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="currentIndex">
+         <number>14</number>
+        </property>
+        <property name="tabsClosable">
+         <bool>false</bool>
+        </property>
+        <property name="tabBarAutoHide">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Sefer Tanımla</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="7" column="0">
+           <widget class="QDateTimeEdit" name="varis_tarih"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QDateTimeEdit" name="kalkis_tarih"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Kalkış Tarih ve Saat</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Araç Seçimi</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Varış Noktası</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="0">
+           <widget class="QComboBox" name="comboboxSurucuSecimi"/>
+          </item>
+          <item row="12" column="0">
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Sürücü Seçimi</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="0">
+           <widget class="QComboBox" name="comboboxAracSecimi"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Kalkış Noktası</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLineEdit" name="varis_noktasi"/>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Varış Tarih ve Saat</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="kalkis_noktasi"/>
+          </item>
+          <item row="13" column="0">
+           <widget class="QPushButton" name="SeferTanimlaButton">
+            <property name="text">
+             <string>Sefer Tanımla</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Sefer İptal</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="1" column="0">
+           <widget class="QComboBox" name="comboboxSilinecekSefer"/>
+          </item>
+          <item row="3" column="0">
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>İptal Edilecek Seferi Seçiniz</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="onayCheckBoxSefer">
+            <property name="text">
+             <string>İşlemi Onaylıyor Musunuz?</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QPushButton" name="seferiIptalEtButton">
+            <property name="text">
+             <string>Seferi İptal Et</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Araç Tanımlama</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_15">
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_32">
+            <property name="text">
+             <string>Araç Model</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="aracKapasite"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_30">
+            <property name="text">
+             <string>Araç Plaka Kodu</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_33">
+            <property name="text">
+             <string>Araç Kapasitesi</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="0">
+           <layout class="QGridLayout" name="gridLayout_17"/>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLineEdit" name="aracModel"/>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="label_34">
+            <property name="text">
+             <string>Araç Özellikleri</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="0">
+           <widget class="QPushButton" name="aracTanimlaButton">
+            <property name="text">
+             <string>Araç Tanımla</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_35">
+            <property name="text">
+             <string>Araç Marka</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLineEdit" name="aracMarka"/>
+          </item>
+          <item row="11" column="0">
+           <spacer name="verticalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLineEdit" name="aracPlakaKodu"/>
+          </item>
+          <item row="10" column="0">
+           <widget class="QComboBox" name="comboboxAracOzellikleri"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>Araç Silme</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_18">
+          <item row="1" column="0">
+           <widget class="QComboBox" name="comboboxSilinecekArac"/>
+          </item>
+          <item row="3" column="0">
+           <spacer name="verticalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_31">
+            <property name="text">
+             <string>Silinecek Aracı Seçiniz</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="onayCheckBoxArac">
+            <property name="text">
+             <string>İşlemi Onaylıyor Musunuz?</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QPushButton" name="aracSilButton">
+            <property name="text">
+             <string>Aracı Sil</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_7">
+         <attribute name="title">
+          <string>Müşteri Ekleme</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_19">
+          <item row="15" column="0">
+           <widget class="QTabWidget" name="tabWidget_2">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="tab_19">
+             <attribute name="title">
+              <string>Müşteri Ekleme</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_14">
+              <item row="2" column="0">
+               <widget class="QLineEdit" name="musAd"/>
+              </item>
+              <item row="14" column="0">
+               <widget class="QLineEdit" name="musSifTekrar"/>
+              </item>
+              <item row="10" column="0">
+               <widget class="QLineEdit" name="musMail"/>
+              </item>
+              <item row="13" column="0">
+               <widget class="QLabel" name="label_37">
+                <property name="text">
+                 <string>Şifre Tekrar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="12" column="0">
+               <widget class="QLineEdit" name="musSif"/>
+              </item>
+              <item row="6" column="0">
+               <widget class="QLineEdit" name="musKimlik"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_36">
+                <property name="text">
+                 <string>Müşteri Soyad</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="0">
+               <widget class="QLabel" name="label_40">
+                <property name="text">
+                 <string>Müşteri Şifre</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="0">
+               <widget class="QLabel" name="label_41">
+                <property name="text">
+                 <string>Müşteri Telefon No</string>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="0">
+               <spacer name="verticalSpacer_11">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="9" column="0">
+               <widget class="QLabel" name="label_38">
+                <property name="text">
+                 <string>Müşteri Mail Adresi</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>Müşteri TC No</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLineEdit" name="musSoyad"/>
+              </item>
+              <item row="16" column="0">
+               <widget class="QPushButton" name="musTanimlaButton">
+                <property name="text">
+                 <string>Müşteri Tanımla</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="0">
+               <widget class="QLineEdit" name="musTelNo"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_39">
+                <property name="text">
+                 <string>Müşteri Ad</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_20">
+             <attribute name="title">
+              <string>Güncellenecek Müşteriyi Seçme</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_16">
+              <item row="21" column="0">
+               <widget class="QPushButton" name="guncelleGuncelleButton">
+                <property name="text">
+                 <string>Güncelle</string>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="0">
+               <widget class="QLineEdit" name="line_edits5"/>
+              </item>
+              <item row="17" column="0">
+               <widget class="QLineEdit" name="line_edits6"/>
+              </item>
+              <item row="19" column="0">
+               <widget class="QPushButton" name="guncelleYenileButton">
+                <property name="text">
+                 <string>Yenile</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="0">
+               <widget class="QLabel" name="label_21">
+                <property name="text">
+                 <string>Müşteri Mail Adresi</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="label_20">
+                <property name="text">
+                 <string>Müşteri Telefon No</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>Müşteri Ad</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_10">
+                <property name="text">
+                 <string>Müşteri Soyad</string>
+                </property>
+               </widget>
+              </item>
+              <item row="16" column="0">
+               <widget class="QLabel" name="label_23">
+                <property name="text">
+                 <string>Şifre Tekrar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="0">
+               <widget class="QPushButton" name="guncelleSecButton">
+                <property name="text">
+                 <string>Seç</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0">
+               <widget class="QLineEdit" name="line_edits2"/>
+              </item>
+              <item row="9" column="0">
+               <widget class="QLineEdit" name="line_edits3"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLineEdit" name="line_edits0"/>
+              </item>
+              <item row="12" column="0">
+               <widget class="QLineEdit" name="line_edits4"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLineEdit" name="line_edits1"/>
+              </item>
+              <item row="18" column="0">
+               <widget class="QTableWidget" name="tableWidgetGuncelleSec">
+                <column>
+                 <property name="text">
+                  <string>ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>İsim</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Soyisim</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Telefon No</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Email</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Şifre</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>TC Kimlik</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>AutID</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item row="14" column="0">
+               <widget class="QLabel" name="label_19">
+                <property name="text">
+                 <string>Müşteri TC No</string>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="0">
+               <widget class="QLabel" name="label_22">
+                <property name="text">
+                 <string>Müşteri Şifre</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Müşteri Silme</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_20">
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="onayCheckBoxMusteri">
+            <property name="text">
+             <string>İşlemi Onaylıyor Musunuz?</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <spacer name="verticalSpacer_12">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_42">
+            <property name="text">
+             <string>Silinecek Müşteriyi Seçiniz</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QComboBox" name="comboboxSilinecekMusteri"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QPushButton" name="musSilButton">
+            <property name="text">
+             <string>Müşteriyi Sil</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_14">
+         <attribute name="title">
+          <string>Silinmiş Müşterileri Gösterme</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="2" column="0">
+             <widget class="QTableWidget" name="TableWidgetSilinmis">
+              <column>
+               <property name="text">
+                <string>ID</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>İsim</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Soyisim</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Telefon No</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Mail</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>TC Kimlik No</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>authorization ID</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="yenileSilinmisButton">
+              <property name="text">
+               <string>Yenile</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="excelSilinmisMusteriButton">
+              <property name="text">
+               <string>Excel'e Kaydet</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_16">
+         <attribute name="title">
+          <string>Personel Ekleme</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_10">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="6" column="0">
+             <widget class="QLineEdit" name="perTelNo"/>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLineEdit" name="perDepartman"/>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLineEdit" name="perSoyad"/>
+            </item>
+            <item row="11" column="0">
+             <widget class="QLabel" name="label_16">
+              <property name="text">
+               <string>Şifre</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="0">
+             <widget class="QLineEdit" name="perUsername"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLineEdit" name="perAd"/>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>Soyisim</string>
+              </property>
+             </widget>
+            </item>
+            <item row="16" column="0">
+             <widget class="QPushButton" name="perKaydetButton">
+              <property name="text">
+               <string>Personel Ekle</string>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="0">
+             <widget class="QLineEdit" name="perSif"/>
+            </item>
+            <item row="14" column="0">
+             <widget class="QLineEdit" name="perSifTekrar"/>
+            </item>
+            <item row="13" column="0">
+             <widget class="QLabel" name="label_17">
+              <property name="text">
+               <string>Şifre Tekrar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>İsim</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>Departman</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_13">
+              <property name="text">
+               <string>Telefon numarası (xxxxxxxxxx)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="0">
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>Kullanıcı Adı</string>
+              </property>
+             </widget>
+            </item>
+            <item row="15" column="0">
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_17">
+         <attribute name="title">
+          <string>Personel Silme</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_12">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_11">
+            <item row="2" column="0">
+             <widget class="QCheckBox" name="onayCheckBoxPersonel">
+              <property name="text">
+               <string>İşlemi onaylıyor musunuz?</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QComboBox" name="comboboxSilinecekPersonel"/>
+            </item>
+            <item row="4" column="0">
+             <widget class="QPushButton" name="perSilButton">
+              <property name="text">
+               <string>Personeli sil</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_18">
+              <property name="text">
+               <string>Silmek istediğiniz Personeli seçiniz</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_8">
+         <attribute name="title">
+          <string>Sürücü Ekleme</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_21">
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_43">
+            <property name="text">
+             <string>Sürücü Soyad</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_46">
+            <property name="text">
+             <string> Sürücü Ad</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_45">
+            <property name="text">
+             <string>Sürücü Lisans Numarası</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_48">
+            <property name="text">
+             <string>Sürücü Telefon No</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="surucuAd"/>
+          </item>
+          <item row="8" column="0">
+           <spacer name="verticalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLineEdit" name="surucuLisansNo"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLineEdit" name="surucuSoyad"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLineEdit" name="surucuTelNo"/>
+          </item>
+          <item row="9" column="0">
+           <widget class="QPushButton" name="surucuTanimlaButton">
+            <property name="text">
+             <string>Sürücü Tanımla</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_9">
+         <attribute name="title">
+          <string>Sürücü Silme</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_22">
+          <item row="3" column="0">
+           <spacer name="verticalSpacer_14">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="0">
+           <widget class="QComboBox" name="comboboxSilinecekSurucu"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_44">
+            <property name="text">
+             <string>Silinecek Sürücüyü Seçiniz</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="onayCheckBoxSurucu">
+            <property name="text">
+             <string>İşlemi Onaylıyor Musunuz?</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QPushButton" name="surucuSilButton">
+            <property name="text">
+             <string>Sürücüyü Sİl</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_6">
+         <attribute name="title">
+          <string>Sorgulama Yap</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QTabWidget" name="hh">
+            <property name="currentIndex">
+             <number>4</number>
+            </property>
+            <widget class="QWidget" name="tab_10">
+             <attribute name="title">
+              <string>Sefer Sorgulama</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_24">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_23">
+                <item row="1" column="1">
+                 <widget class="QComboBox" name="comboboxVarisYeriFiltre"/>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="label_47">
+                  <property name="text">
+                   <string>Araç Marka - Varış Yeri</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="label_49">
+                  <property name="text">
+                   <string>Kalkış Saati</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="3">
+                 <widget class="QComboBox" name="comboboxVarisSaati"/>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QLabel" name="label_50">
+                  <property name="text">
+                   <string>Varış Saati</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QComboBox" name="comboboxKalkisSaati"/>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QComboBox" name="comboboxKalkisYeriFiltre"/>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_51">
+                  <property name="text">
+                   <string>Araç Model - Kalkış Yeri</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <widget class="QPushButton" name="seferSorgulamafiltreButton">
+                <property name="text">
+                 <string>Filtreleme Yap</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QTableWidget" name="tableWidgetSeferler">
+                <column>
+                 <property name="text">
+                  <string>ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Kalkış Yeri</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Varış Yeri</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Kalkış Tarihi</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Varış Tarihi</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Otobüs</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Sürücü</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QPushButton" name="excelSeferButton">
+                <property name="text">
+                 <string>Excel'e Kaydet</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_11">
+             <attribute name="title">
+              <string>Araç Sorgulama</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_26">
+              <item row="3" column="0" colspan="2">
+               <widget class="QTableWidget" name="aracSorgulama_tableWidget">
+                <column>
+                 <property name="text">
+                  <string>ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Kapasite</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Plaka</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Marka</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Model</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="2">
+               <layout class="QGridLayout" name="gridLayout_25">
+                <item row="1" column="2">
+                 <widget class="QComboBox" name="comboboxAracModel_2"/>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_52">
+                  <property name="text">
+                   <string>Araç Plaka</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="label_53">
+                  <property name="text">
+                   <string>Araç Model</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QComboBox" name="comboboxAracMarka_2"/>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="label_54">
+                  <property name="text">
+                   <string>Araç Marka</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QComboBox" name="comboboxAracPlaka"/>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QPushButton" name="aracSorgulamafiltreButton">
+                <property name="text">
+                 <string>Filtreleme Yap</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0" colspan="2">
+               <widget class="QPushButton" name="excelAracButton">
+                <property name="text">
+                 <string>Excel'e Kaydet</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_12">
+             <attribute name="title">
+              <string>Müşteri Sorgulama</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_28">
+              <item row="3" column="0" colspan="2">
+               <widget class="QTableWidget" name="musSorgulama_tableWidget">
+                <column>
+                 <property name="text">
+                  <string>ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>İsim</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Soyisim</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Telefon Numarası</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>E-mail</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>TC Kimlik Numarası</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Kademe</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="2">
+               <layout class="QGridLayout" name="gridLayout_27">
+                <item row="2" column="4">
+                 <widget class="QLineEdit" name="musSorgulama_MusTelNo"/>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLineEdit" name="musSorgulama_MusAd"/>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QLineEdit" name="musSorgulama_MusSoyad"/>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_55">
+                  <property name="text">
+                   <string>Müşteri Ad</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QLabel" name="label_56">
+                  <property name="text">
+                   <string>Müşteri Soyad</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="4">
+                 <widget class="QLabel" name="label_57">
+                  <property name="text">
+                   <string>Müşteri Telefon No</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="6">
+                 <widget class="QLabel" name="label_58">
+                  <property name="text">
+                   <string>Müşteri Mail Adresi</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="6">
+                 <widget class="QLineEdit" name="musSorgulama_MusMail"/>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QPushButton" name="musSorgulamafiltreButton">
+                <property name="text">
+                 <string>Filtreleme Yap</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0" colspan="2">
+               <widget class="QPushButton" name="excelMusteriButton">
+                <property name="text">
+                 <string>Excel'e Kaydet</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_13">
+             <attribute name="title">
+              <string>Sürücü Sorgulama</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_30">
+              <item row="2" column="0" colspan="2">
+               <widget class="QPushButton" name="surucuSorgulamafiltreButton">
+                <property name="text">
+                 <string>Filtreleme Yap</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0" colspan="2">
+               <widget class="QPushButton" name="excelSurucuButton">
+                <property name="text">
+                 <string>Excel'e Kaydet</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0" colspan="2">
+               <widget class="QTableWidget" name="surucuSorgulama_tableWidget">
+                <column>
+                 <property name="text">
+                  <string>ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>İsim</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Soyisim</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Telefon Numarası</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Lisans Numarası</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <layout class="QGridLayout" name="gridLayout_29">
+                <item row="2" column="2">
+                 <widget class="QLineEdit" name="surucuSorgulama_SurucuSoyad"/>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QLabel" name="label_62">
+                  <property name="text">
+                   <string>Sürücü Soyad</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="6">
+                 <widget class="QLabel" name="label_61">
+                  <property name="text">
+                   <string>Sürücü Lisans Numarası</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_60">
+                  <property name="text">
+                   <string>Sürücü Ad</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="6">
+                 <widget class="QLineEdit" name="surucuSorgulama_SurucuLisansNo"/>
+                </item>
+                <item row="2" column="4">
+                 <widget class="QLineEdit" name="surucuSorgulama_SurucuTelno"/>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLineEdit" name="surucuSorgulama_SurucuAd"/>
+                </item>
+                <item row="1" column="4">
+                 <widget class="QLabel" name="label_59">
+                  <property name="text">
+                   <string>Sürücü Telefon No</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="4" column="0" colspan="2">
+               <widget class="QPushButton" name="exceldenVeritabaninaKaydetButton">
+                <property name="text">
+                 <string>Excel'den Veritabanına Kaydet</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_15">
+             <attribute name="title">
+              <string>Yedekleme</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="1" column="1">
+               <widget class="QPushButton" name="yedek_giris_button">
+                <property name="text">
+                 <string>Yedekle</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QPushButton" name="yedegiGeriYukleButton">
+                <property name="text">
+                 <string>Yedeği Geri Yükle</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_21">
+         <attribute name="title">
+          <string>Personel Yetki</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_31">
+          <item row="4" column="0">
+           <widget class="QPushButton" name="yetkiButton">
+            <property name="text">
+             <string>Yetkiyi Değiştir</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <spacer name="verticalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="0">
+           <widget class="QComboBox" name="comboboxYetkiDerece">
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QComboBox" name="comboboxYetkiPersonel"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_24">
+            <property name="text">
+             <string>Yetki verilecek personeli seçiniz</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_25">
+            <property name="text">
+             <string>Yetki derecesini seçiniz</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_18">
+         <attribute name="title">
+          <string>SQL Komutu</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_13">
+          <item row="2" column="0">
+           <widget class="QTableWidget" name="SQLtableWidget"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QTextEdit" name="SQLtextEdit"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="SQLSorguCalistirButton">
+            <property name="text">
+             <string>Sorguyu Çalıştır</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_22">
+         <attribute name="title">
+          <string>Biletler</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_32">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="tableWidget">
+            <column>
+             <property name="text">
+              <string>ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>koltuk</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>kalkış saati</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Fiyat</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Müşteri ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Seyahat ID</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="BiletlerButton">
+            <property name="text">
+             <string>buton</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="logo_label">
+        <property name="text">
+         <string>LOGO</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="kilidiAcButton">
+        <property name="text">
+         <string>Kilidi Aç</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yenileButton">
+        <property name="text">
+         <string>Yenile</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="profilButton">
+        <property name="text">
+         <string>Profil</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cikisButton">
+        <property name="text">
+         <string>Çıkış</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
